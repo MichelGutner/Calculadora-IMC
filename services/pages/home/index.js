@@ -74,15 +74,16 @@ const Home = ({user}) => {
         </View>
 
         <View style={styles.inputText}>
-          <Text style={styles.textInput}>Peso</Text>
+          <Text style={styles.textInput}> Peso</Text>
           <Icon name="weight-kilogram"
-          size={30}/>
+          size={30}
+          style={{marginLeft: 8}}/>
           <TextInput
           onChangeText={(text) => handleChangeText(text, 'peso')}
           style={{fontSize: 30, borderBottomWidth: 1, width: 150, color: colors.WHITE, textAlign: 'right'}}
           placeholder=""
           keyboardType="numeric"
-          maxLength={3}
+          maxLength={5}
           />
         </View>
       </View>
